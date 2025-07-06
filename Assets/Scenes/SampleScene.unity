@@ -561,6 +561,7 @@ GameObject:
   - component: {fileID: 341161532}
   - component: {fileID: 341161531}
   - component: {fileID: 341161530}
+  - component: {fileID: 341161533}
   m_Layer: 0
   m_Name: Alarm
   m_TagString: Untagged
@@ -580,8 +581,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94afd2681e99acb4784f90f244b4db11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alarmSound: {fileID: 252124580}
-  fadeSpeed: 0.1
+  _alarmSound: {fileID: 252124580}
+  _fadeSpeed: 0.5
+  _trigger: {fileID: 341161533}
 --- !u!65 &341161531
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -619,6 +621,18 @@ Transform:
   - {fileID: 252124581}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &341161533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341161529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2570836f0e2f26458460ebc5e5a40b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
